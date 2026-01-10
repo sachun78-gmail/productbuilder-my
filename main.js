@@ -20,3 +20,5 @@ generatorBtn.addEventListener('click', () => {
 darkModeBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+(adsbygoogle = window.adsbygoogle || []).push({});
