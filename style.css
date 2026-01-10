@@ -1,24 +1,89 @@
 body {
   font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
-h1 {
-  background-color: skyblue;
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-#generator-btn, #dark-mode-btn {
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.articles {
+  margin-top: 40px;
+}
+
+.articles h2 {
+  margin-bottom: 20px;
+}
+
+.articles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.articles li {
+  margin-bottom: 10px;
+}
+
+.articles a {
+  text-decoration: none;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
 #numbers-container {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -41,9 +106,23 @@ body.dark-mode {
   color: #ffffff;
 }
 
-body.dark-mode h1 {
+body.dark-mode header {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode nav a {
+  color: #fff;
+}
+
+body.dark-mode .articles a {
+  color: #fff;
+}
+
+body.dark-mode form input, body.dark-mode form textarea {
   background-color: #333;
-  color: #ffffff;
+  color: #fff;
+  border: 1px solid #555;
 }
 
 body.dark-mode .number-circle {
