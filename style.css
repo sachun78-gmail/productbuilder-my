@@ -4,9 +4,14 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#generator-btn {
+h1 {
+  background-color: skyblue;
+}
+
+#generator-btn, #dark-mode-btn {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -28,4 +33,20 @@ body {
   margin: 0 10px;
   font-size: 20px;
   font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode h1 {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode .number-circle {
+  background-color: #555;
+  color: #ffffff;
 }

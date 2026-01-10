@@ -1,5 +1,6 @@
 const generatorBtn = document.getElementById('generator-btn');
 const numbersContainer = document.getElementById('numbers-container');
+const darkModeBtn = document.getElementById('dark-mode-btn');
 
 generatorBtn.addEventListener('click', () => {
   numbersContainer.innerHTML = '';
@@ -14,4 +15,8 @@ generatorBtn.addEventListener('click', () => {
     circle.textContent = number;
     numbersContainer.appendChild(circle);
   }
+});
+
+darkModeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });
